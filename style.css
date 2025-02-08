@@ -1,18 +1,15 @@
 body{
-    background-color: blanchedalmond;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
-
-
+    background-image: url(https://media.istockphoto.com/id/1219382595/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BD%D0%B0-%D0%B4%D0%BE%D1%81%D0%BA%D0%B5.jpg?s=2048x2048&w=is&k=20&c=qNcHRO3MKuon5w7RWJ6yaaw6_ACbRH9ooD_AxOQloVs=);
+    background-size: cover;
 
 }
-
-
+ 
 .container {
     display: flex;
     align-items: center;
@@ -23,18 +20,28 @@ body{
 }
 .main{
     display: none;
+    
 }
 .question {
     font-size: 100px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 
 .ans-row {
     display: flex;
     box-sizing: border-box;
+    background-color: aliceblue;
 }
 .container_h3{
     margin-bottom: 10px;
+    color: black;
+    background-color: aliceblue;
+   border-radius: 10%;
+   
+
 }
 .answer {
     width: 65px;
@@ -51,15 +58,15 @@ body{
     font-size: 30px;
     padding: .5em;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    background-color: aliceblue;
+    
 }
-
 
 .start-btn:hover{
  background: gold;
-
-
+ 
 }
 .ggg{
     width: 500px;
@@ -69,4 +76,5 @@ body{
     margin: 50px;
  
 }
+
 
