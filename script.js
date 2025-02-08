@@ -103,7 +103,7 @@ start_button.addEventListener('click', function () {
         } else {
         resultImages.src = "https://learn.logikaschool.com/uploads/student/2424919/67a3952b978e0.jpg";
         }
-    }, 30000);
+    }, 20000);
 });
 
 
@@ -113,19 +113,33 @@ start_button.addEventListener('click', function () {
 for (let i = 0; i < answer_buttons.length; i += 1) {
     answer_buttons[i].addEventListener('click', function () {
         if (answer_buttons[i].innerHTML == current_question.correct) {
-            correct_answers_given += 1;
-            answer_buttons[i].style.background = '#00FF00'; // Зелений
+            correct_answers_given += 1
+            answer_buttons[i].style.background = '#00FF00'
+            anime({
+                targets: answer_buttons[i],
+                background: '#FFFFFF',
+                duration: 500,
+                delay: 100,
+                easing: 'linear'
+            })
         } else {
-            answer_buttons[i].style.background = '#FF0000'; // Червоний
+            answer_buttons[i].style.background = '#FF0000'
+            anime({
+                targets: answer_buttons[i],
+                background: '#FFFFFF',
+                duration: 500,
+                delay: 100,
+                easing: 'linear'
+            })
         }
 
-        // Затримка перед поверненням кольору (наприклад, 500 мс)
-        setTimeout(() => {
-            answer_buttons[i].style.background = 'blanchedalmond';
-        }, 500);
 
-        total_answers_given += 1;
-        current_question = new Question();
-        current_question.display();
-    });
+        total_answers_given += 1
+
+
+        current_question = new Question()
+        current_question.display()
+    })
 }
+
+
